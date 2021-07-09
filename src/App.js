@@ -1,7 +1,7 @@
 import Pagination from './components/Pagination/Pagination';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import PhotoList from './components/PhotoPage/PhotoList';
 import Home from './components/Home';
+import PhotoMain from './components/PhotoPage/PhotoMain';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
             <Pagination />
           </Route>
           <Route path='/context'>
-            <PhotoList />
+            <PhotoMain />
           </Route>
         </Switch>
       </div>

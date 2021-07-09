@@ -74,3 +74,42 @@ nav a:hover {
 .pagination-container .pagination {
   margin-top: 20px;
 }
+
+#photo-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+#photo-list-container li,
+#photo-list-container ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#photo-list-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#toggle-btns {
+  margin-top: 20px;
+  display: flex;
+}
+
+#photo-list-container a {
+  text-decoration: none;
+  margin-bottom: 50px;
+  color: rgb(57, 102, 186);
+  transition: color 0.3s ease;
+}
+
+#photo-list-container a:hover {
+  color: rgb(147, 199, 255);
+}
