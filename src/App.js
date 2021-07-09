@@ -1,7 +1,9 @@
+import Pagination from './components/Pagination';
+
 function App() {
   return (
     <div className='Container'>
-      <h1>App</h1>
+      <Pagination />
     </div>
   );
 }
