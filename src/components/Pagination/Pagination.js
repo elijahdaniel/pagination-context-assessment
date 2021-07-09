@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 let USER_URL = 'https://swapi.dev/api/people/';
 
 function Pagination() {
   const [currentRoute, setCurrentRoute] = useState(1);
-  const [count, setCount] = useState(10);
   const [results, setResults] = useState([]);
   const [disabledNext, setDisabledNext] = useState(0);
   const [disabledPrev, setDisabledPrev] = useState(0);
@@ -28,7 +28,8 @@ function Pagination() {
   }, [currentRoute]);
 
   return (
-    <>
+    <div className='pagination-container'>
+      <Link to='/'>Back to Homepage</Link>
       <table className='table'>
         <thead>
           <tr>
@@ -77,7 +78,7 @@ function Pagination() {
           Last
         </button>
       </section>
-    </>
+    </div>
   );
 }
 
